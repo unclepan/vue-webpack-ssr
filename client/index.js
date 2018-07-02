@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './app.vue'
 
-import './assets/style/global.styl';
+import './assets/style/global.styl'
 import './assets/images/bg.jpeg'
 
 const root = document.createElement('div')

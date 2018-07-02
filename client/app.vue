@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <div id="cover"></div>
+    <div id="cover">
+      {{docs}}
+    </div>
     <Header></Header>
     <Todo></Todo>
     <Footer></Footer>
@@ -18,9 +20,10 @@ export default {
     Todo,
     Footer
   },
-  data() {
+  data () {
     return {
-      text: 'hello'
+      text: 'hello',
+      docs: Header.__docs
     }
   }
 }

@@ -25,21 +25,21 @@ export default {
     }
   },
   computed: {
-    unFinishedTodoLength() {
-      return this.todos.filter(todo => !todo.completed).length;
+    unFinishedTodoLength () {
+      return this.todos.filter(todo => !todo.completed).length
     }
   },
-  data() {
+  data () {
     return {
       state: ['all', 'active', 'completed']
     }
   },
   methods: {
-    toggleFilter(state) {
+    toggleFilter (state) {
       this.$emit('toggle', state)
     },
-    clearAllCompleted() {
-      this.$emit('clearAll');
+    clearAllCompleted () {
+      this.$emit('clearAll')
     }
   }
 }

@@ -1,7 +1,7 @@
-// import '../assets/image/footer.styl'
+import '../assets/style/footer.styl'
 
 export default {
-  data() {
+  data () {
     return {
       author: 'Jokcy'
     }
