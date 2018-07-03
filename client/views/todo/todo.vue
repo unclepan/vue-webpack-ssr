@@ -26,31 +26,31 @@
 import Tabs from './tabs.vue'
 import Item from './item.vue'
 
-let id = 0;
+let id = 0
 
 export default {
   components: {
     Item,
     Tabs
   },
-  data() {
+  data () {
     return {
       todos: [],
       filter: 'all'
     }
   },
   computed: {
-    filterdTodos() {
+    filterdTodos () {
       if (this.filter === 'all') {
-        return this.todos;
+        return this.todos
       }
 
-      const completed = this.filter === 'completed';
+      const completed = this.filter === 'completed'
       return this.todos.filter(todo => completed === todo.completed)
     }
   },
   methods: {
-    addTodo(e) {
+    addTodo (e) {
       this.todos.unshift({
         id: id++,
         content: e.target.value.trim(),
@@ -58,15 +58,15 @@ export default {
       })
       e.target.value = ''
     },
-    deleteTodo(id) {
+    deleteTodo (id) {
       this.todos.splice(this.todos.findIndex(todo => todo.id === id), 1)
     },
-    toggleFilter(state) {
+    toggleFilter (state) {
       this.filter = state
     },
-    clearAllCompleted() {
-      console.log(123);
-      
+    clearAllCompleted () {
+      console.log(123)
+
       this.todos = this.todos.filter(todo => !todo.completed)
     }
   }
@@ -91,7 +91,7 @@ export default {
   line-height: 1.4em;
   border: 0;
   outline: none;
-  color: inherit;
+  color :red;
   padding: 6px;
   border: 1px solid #999;
   box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
