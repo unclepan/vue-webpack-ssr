@@ -9,7 +9,7 @@ export default {
   render () {
     return (
       <div id="footer">
-        <span>Written by Jokcy</span>
+        <span>Written by unclepan</span>
       </div>
     )
   }
