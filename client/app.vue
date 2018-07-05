@@ -10,23 +10,23 @@
 </template>
 
 <script>
-import Header from './layout/header.vue'
-import Todo from './views/todo/todo.vue'
-import Footer from './layout/footer.jsx'
+import Header from './layout/header.vue';
+import Todo from './views/todo/todo.vue';
+import Footer from './layout/footer.jsx';
 
 export default {
   components: {
     Header,
     Todo,
-    Footer
+    Footer,
   },
-  data () {
+  data() {
     return {
       text: 'hello',
-      docs: Header.__docs
-    }
-  }
-}
+      docs: Header.__docs,
+    };
+  },
+};
 </script>
 
 <style lang="stylus" scoped>
