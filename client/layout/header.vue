@@ -18,5 +18,5 @@
 </style>
 
 <docs>
-This is the documentation for header.
+''
 </docs>

@@ -16,15 +16,15 @@ export default {
     todo: {
       type: Object,
       required: 'this is todo',
-      completed: true
-    }
+      completed: true,
+    },
   },
   methods: {
-    deleteTodo () {
-      this.$emit('del', this.todo.id)
-    }
-  }
-}
+    deleteTodo() {
+      this.$emit('del', this.todo.id);
+    },
+  },
+};
 </script>
 
 

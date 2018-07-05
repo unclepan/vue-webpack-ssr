@@ -1,16 +1,16 @@
-import '../assets/style/footer.styl'
+import '../assets/style/footer.styl';
 
 export default {
-  data () {
+  data() {
     return {
-      author: 'Jokcy'
-    }
+      author: 'Jokcy',
+    };
   },
-  render () {
+  render() {
     return (
       <div id="footer">
-        <span>Written by Jokcy</span>
+        <span>Written by unclepan</span>
       </div>
-    )
-  }
-}
+    );
+  },
+};
