@@ -51,8 +51,9 @@ export default {
   },
   methods: {
     addTodo(e) {
+      let id = id + 1;
       this.todos.unshift({
-        id: id++,
+        id,
         content: e.target.value.trim(),
         completed: false,
       });
