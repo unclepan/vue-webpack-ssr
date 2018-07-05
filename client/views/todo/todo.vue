@@ -26,7 +26,7 @@
 import Tabs from './tabs.vue';
 import Item from './item.vue';
 
-let id = 0;
+const id = 0;
 
 export default {
   components: {
@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     addTodo(e) {
-      let id = id + 1;
+      const id = id + 1;
       this.todos.unshift({
         id,
         content: e.target.value.trim(),
